@@ -2,32 +2,31 @@ package operacion.cociente;
 
 import java.util.Scanner;
 
-import operacion.main.Pruebas;
 
 /**
- * Esta clase contiene la división de a calculadora.
+ * Esta clase contiene la divisiÃ³n de a calculadora.
  * @author Pablo Beitia Mateos
  * @version 1.0
  * @since 24/02/2021
  */
-public class Cociente extends Pruebas{
+public class Cociente{
 	static Scanner leer = new Scanner(System.in);
 	
 	/**
-	 *<h1>Método que divide dos números enteros y devuelve el resultado de la división.</h1>
+	 *<h1>MÃ©todo que divide dos nÃºmeros enteros y devuelve el resultado de la divisiÃ³n.</h1>
 	 * 
 	 *Casos Especiales:
 	 * 	<ul>
-	 * 		<li>Si el dividendo es 0 el resultado de la división es 0.</li>
-	 * 		<li>Si el divisor es 0, la división dará error porque no se puede dividir entre 0.</li>
-	 *		<li>Si el dividendo o divisor es negativo dará error la calculadora.</li>
-	 *		<li>Si la división no da un número exacto, se muestra el número real que haya salido.</li>
+	 * 		<li>Si el dividendo es 0 el resultado de la divisiÃ³n es 0.</li>
+	 * 		<li>Si el divisor es 0, la divisiÃ³n darÃ¡ error porque no se puede dividir entre 0.</li>
+	 *		<li>Si el dividendo o divisor es negativo darÃ¡ error la calculadora.</li>
+	 *		<li>Si la divisiÃ³n no da un nÃºmero exacto, se muestra el nÃºmero real que haya salido.</li>
 	 *	</ul>
 	 *
-	 * @param divisor Número real que actuará como divisor en la división.
-	 * @param dividendo Número real que actuará como dividendo en la división.
-	 * @param resultado Resultado final de la división entre los dos números
-	 * @return Devuelve el resultado de la división.
+	 * @param divisor NÃºmero real que actuarÃ¡ como divisor en la divisiÃ³n.
+	 * @param dividendo NÃºmero real que actuarÃ¡ como dividendo en la divisiÃ³n.
+	 * @param resultado Resultado final de la divisiÃ³n entre los dos nÃºmeros
+	 * @return Devuelve el resultado de la divisiÃ³n.
 	 */
 	public static double CocienteTipoUno() {
 		double resultado = 0;
@@ -40,20 +39,20 @@ public class Cociente extends Pruebas{
 	}
 	
 	/**
-	 *<h1>Método que divide dos números enteros y devuelve el resultado de la división.</h1>
+	 *<h1>MÃ©todo que divide dos nÃºmeros enteros y devuelve el resultado de la divisiÃ³n.</h1>
 	 * 
 	 *Casos Especiales:
 	 * 	<ul>
-	 * 		<li>Si el dividendo es 0 el resultado de la división es 0.</li>
-	 * 		<li>Si el divisor es 0, la división dará error porque no se puede dividir entre 0.</li>
-	 *		<li>Si el dividendo o divisor es negativo dará error la calculadora.</li>
-	 *		<li>Si la división no da un número exacto, se muestra el número sin decimales.</li>
+	 * 		<li>Si el dividendo es 0 el resultado de la divisiÃ³n es 0.</li>
+	 * 		<li>Si el divisor es 0, la divisiÃ³n darÃ¡ error porque no se puede dividir entre 0.</li>
+	 *		<li>Si el dividendo o divisor es negativo darÃ¡ error la calculadora.</li>
+	 *		<li>Si la divisiÃ³n no da un nÃºmero exacto, se muestra el nÃºmero sin decimales.</li>
 	 *	</ul>
 	 *
-	 * @param divisor Número entero que actuará como divisor en la división.
-	 * @param dividendo Número entero que actuará como dividendo en la división.
-	 * @param resultado Resultado final de la división entre los dos números.
-	 * @return Devuelve el resultado de la división.
+	 * @param divisor NÃºmero entero que actuarÃ¡ como divisor en la divisiÃ³n.
+	 * @param dividendo NÃºmero entero que actuarÃ¡ como dividendo en la divisiÃ³n.
+	 * @param resultado Resultado final de la divisiÃ³n entre los dos nÃºmeros.
+	 * @return Devuelve el resultado de la divisiÃ³n.
 	 */
 	public static double CocienteTipoDos() {
 		int resultado = 0;
@@ -66,44 +65,44 @@ public class Cociente extends Pruebas{
 	}
 	
 	/**
-	 *<h1>Método que hace el inverso de un número y devuelve la solución.</h1>
+	 *<h1>MÃ©todo que hace el inverso de un nÃºmero y devuelve la soluciÃ³n.</h1>
 	 *
 	 *Casos Especiales:
 	 * 	<ul>
-	 * 		<li>Si el número es 0, el resultado del inverso dará error.</li>
-	 *		<li>Si el número es negativo, la calculadora funcionará y mostrará el resultado.</li>
-	 *		<li>Si el número contiene decimales, se hará el inverso de dicho número.</li>
+	 * 		<li>Si el nÃºmero es 0, el resultado del inverso darÃ¡ error.</li>
+	 *		<li>Si el nÃºmero es negativo, la calculadora funcionarÃ¡ y mostrarÃ¡ el resultado.</li>
+	 *		<li>Si el nÃºmero contiene decimales, se harÃ¡ el inverso de dicho nÃºmero.</li>
 	 *	</ul>
 	 *
-	 * @param numeroReal  Número real que se usará para calcular su inverso.
-	 * @param resultado Resultado del inverso del número real.
-	 * @return Devuelve el resultado del inverso de un número.
+	 * @param numeroReal  NÃºmero real que se usarÃ¡ para calcular su inverso.
+	 * @param resultado Resultado del inverso del nÃºmero real.
+	 * @return Devuelve el resultado del inverso de un nÃºmero.
 	 */
 	public static double CocienteTipoTres() {
 		double resultado = 0;
-		System.out.println("Introduce un número para sacar su inverso: ");
+		System.out.println("Introduce un nÃºmero para sacar su inverso: ");
 		double numeroReal = leer.nextDouble();
 		resultado = 1/numeroReal;
 		return resultado;
 	}
 	
 	/**
-	 *<h1>Método que hace la raíz cuadrada de un número y muestra su resultado</h1>
+	 *<h1>MÃ©todo que hace la raÃ­z cuadrada de un nÃºmero y muestra su resultado</h1>
 	 *
 	 *Casos Especiales:
 	 * 	<ul>
-	 *		<li>Si el número es negativo, la raíz cuadrada dará error.</li>
-	 *		<li>Si el número contiene decimales, se hará la raí< cuadrada de dicho número.</li>
-	 *		<li>Si el número es 0, el resultado será 0.</li>
+	 *		<li>Si el nÃºmero es negativo, la raÃ­z cuadrada darÃ¡ error.</li>
+	 *		<li>Si el nÃºmero contiene decimales, se harÃ¡ la raÃ­< cuadrada de dicho nÃºmero.</li>
+	 *		<li>Si el nÃºmero es 0, el resultado serÃ¡ 0.</li>
 	 *	</ul>
 	 *
-	 * @param raiz Número real que se usará para calcular su raiz cuadrada.
-	 * @param resultado Número real que mostrará la raiz cuadrada del número tecleado.
-	 * @return Devuelve la raiz cuadrada de un número.
+	 * @param raiz NÃºmero real que se usarÃ¡ para calcular su raiz cuadrada.
+	 * @param resultado NÃºmero real que mostrarÃ¡ la raiz cuadrada del nÃºmero tecleado.
+	 * @return Devuelve la raiz cuadrada de un nÃºmero.
 	 */
 	public static double CocienteTipoCuatro() {
 		double resultado = 0;
-		System.out.println("Introduce un número para sacar su raíz: ");
+		System.out.println("Introduce un nÃºmero para sacar su raÃ­z: ");
 		double raiz = leer.nextDouble();
 		resultado = Math.sqrt(raiz);
 		return resultado;
